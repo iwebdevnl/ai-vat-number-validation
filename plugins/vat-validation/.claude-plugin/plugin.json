@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "ai-vat-number-validation",
+  "displayName": "AI VAT Number Validation",
+  "version": "1.0.0",
+  "defaultEnabled": false,
+  "description": "Verify EU VAT numbers from your AI assistant, with a consultation number as evidence.",
+  "author": { "name": "iWebDevelopment", "url": "https://www.iwebdevelopment.com" },
+  "homepage": "https://www.iwebdevelopment.com/kennisbank",
+  "license": "MIT",
+  "keywords": ["vat", "vies", "vat-validation", "mcp", "eu", "tax"]
+}

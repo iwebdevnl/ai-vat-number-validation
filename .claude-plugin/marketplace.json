@@ -1,12 +1,12 @@
 {
   "name": "iwebdevnl-vat-number-validation",
-  "description": "iWebDevelopment marketplace voor AI VAT Number Validation: een hosted MCP-server met commands voor het Handelsregister.",
+  "description": "iWebDevelopment marketplace for AI VAT Number Validation: a hosted MCP server that verifies EU VAT numbers via VIES.",
   "owner": { "name": "iWebDevelopment", "email": "support@iwebdevelopment.com" },
   "plugins": [
     {
       "name": "ai-vat-number-validation",
-      "source": "./plugins/kvk-handelsregister",
-      "description": "AI VAT Number Validation: het Handelsregister via MCP"
+      "source": "./plugins/vat-validation",
+      "description": "AI VAT Number Validation: EU VAT numbers via MCP"
     }
   ]
 }

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "vat": {
+      "type": "http",
+      "url": "https://mcp-vat.iwebdevelopment.com"
+    }
+  }
+}
