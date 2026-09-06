@@ -1,0 +1,12 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.iwebdevelopment/ai-vat-number-validation",
+  "description": "AI VAT Number Validation: hosted MCP-server om Nederlandse bedrijven op te zoeken in het Handelsregister.",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp-vat.iwebdevelopment.com"
+    }
+  ]
+}

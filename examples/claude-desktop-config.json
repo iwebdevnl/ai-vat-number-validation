@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "vat": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://mcp-vat.iwebdevelopment.com"]
+    }
+  }
+}
