@@ -5,7 +5,7 @@ Recent Zed builds support remote MCP servers natively. Older builds need a small
 ## Recent builds
 
 1. Go to **Settings → AI → MCP Servers** and add the URL: `https://mcp-vat.iwebdevelopment.com`
-2. Sign up when prompted: your email address and the KVK number of your own organization. You get a sign-in link by email.
+2. Sign up when prompted: your email address and the VAT number of your own organization. You get a sign-in link by email.
 
 ## Older builds
 

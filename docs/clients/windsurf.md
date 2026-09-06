@@ -7,10 +7,10 @@ Windsurf connects to remote MCP servers through its Tools settings, or by editin
 1. Go to **Settings → Tools → Add Server**, or edit the raw config:
 
    ```json
-   { "mcpServers": { "kvk": { "serverUrl": "https://mcp-vat.iwebdevelopment.com" } } }
+   { "mcpServers": { "vat": { "serverUrl": "https://mcp-vat.iwebdevelopment.com" } } }
    ```
 
-2. Sign up when Windsurf opens the browser: your email address and the KVK number of your own organization.
+2. Sign up when Windsurf opens the browser: your email address and the VAT number of your own organization.
 
 Some Enterprise Windsurf plans may gate remote MCP servers by admin policy.
 

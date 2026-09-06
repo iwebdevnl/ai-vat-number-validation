@@ -21,6 +21,7 @@ nav:
       - Zed: clients/zed.md
       - Perplexity: clients/perplexity.md
       - Microsoft Copilot Studio: clients/copilot-studio.md
+  - Reading the result: reading-the-result.md
   - Monthly allowances: limits.md
   - FAQ: faq.md
   - Security & privacy: security-and-privacy.md

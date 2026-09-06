@@ -6,37 +6,46 @@ Go to Settings → Connectors → Add custom connector, paste the base URL
 [Claude client page](clients/claude.md) for details.
 
 **What does it cost?**
-Nothing. There is no plan, no trial that expires, and no credit card. Every organization gets 50
-searches and 25 profiles per month; see [Monthly allowances](limits.md).
+Nothing. There is no plan, no trial that expires, and no credit card. Every organization gets 100
+verifications per month; see [Monthly allowances](limits.md).
 
-**Do I need an accounting package, or a KVK account of my own?**
-Neither. You sign up with an email address and the KVK number of your own organization.
+**Why do you need my own VAT number?**
+VIES issues a consultation number to a *requester*. Without a requester VAT number there is
+nothing to hand you as evidence, only a plain valid or not valid.
 
-**Why does a search give me a company without an address?**
-The register does not disclose an address for every entry in a search result. `company_profile`
-returns more, including the address of the main establishment, but it needs a KVK number.
+**It says a field was "not processed". Is that bad?**
+No. Several member states, among them Ireland, Luxembourg, France, Italy and Germany, do not
+return the match elements at all. Nothing was checked for that field and nothing is wrong. See
+[Reading the result](reading-the-result.md).
 
-**My allowance is used up. What now?**
-That tool declines until the start of the next calendar month; the other one keeps working. The
-counter is per organization, so everyone signed in under the same account shares it.
+**The check failed. Does that mean the number is invalid?**
+Not necessarily. VIES has outages and member states go offline individually. An unavailable
+service is a different answer from an invalid number, and only the second one is a finding.
 
-**I cannot find a company. Is something wrong?**
-Possibly not. The Handelsregister covers organizations registered in the Netherlands, so a
-foreign supplier will not be in it. A company can also be registered under a statutory name that
-differs from the name you know it by; try a distinctive part of the name, or search by town.
+**Does this prove my supplier is legitimate?**
+No. It confirms that a VAT number is registered and, where the member state cooperates, that the
+name and address match. It is not a credit check and not a fraud determination.
+
+**Which countries does it cover?**
+The 27 EU member states, plus Northern Ireland (XI) numbers. It does not cover VAT numbers issued
+outside the EU.
+
+**Why did a Dutch check use one of my register lookups?**
+For a Dutch number given with a company name but no address, the address is completed from the
+Dutch business register first. Supply an address yourself, or pass `use_kvk: false`, and it does
+not happen.
 
 **Can the assistant change anything?**
-No. Both tools are read-only, and there is nothing to write to: this connection talks to a public
-register, not to your own systems.
+No. The tool is read-only, and there is nothing to write to.
 
-**Do you keep what I look up?**
+**Do you keep what I check?**
 No. The answer is used to reply to you and is not stored. We keep your email address, your
-organization's KVK number, a session and a usage counter. See
+organization's VAT number, a session and a usage counter. See
 [PRIVACY.md](https://github.com/iwebdevnl/ai-vat-number-validation/blob/main/PRIVACY.md).
 
-**Is this a product of the Kamer van Koophandel?**
-No. It is built by iWebDevelopment and queries the register's public API. We are not affiliated
-with the Kamer van Koophandel and do not speak on its behalf. See
+**Is this an EU service?**
+No, it is built by iWebDevelopment and queries VIES, which is operated by the European
+Commission. We are not affiliated with the Commission and do not speak on its behalf. See
 [TRADEMARKS.md](https://github.com/iwebdevnl/ai-vat-number-validation/blob/main/TRADEMARKS.md).
 
 **Where is my data hosted?**

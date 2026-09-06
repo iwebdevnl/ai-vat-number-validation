@@ -5,22 +5,30 @@ monthly allowance.
 
 | Allowance | Free | With the add-on |
 |---|---:|---:|
-| Searches (`company_search`) | 50 | 1000 |
-| Profiles (`company_profile`) | 25 | 100 |
+| VAT verifications (`company_verify_vat`) | 100 | 1000 |
+| Register lookups | 50 | 1000 |
 
-## Why profiles have a lower allowance
+## Why there are two rows
 
-The Kamer van Koophandel charges for a profile lookup and not for a search. The allowances follow
-that difference, which is also why `/kvk-zoek` is the right first step and `/kvk-profiel` the
-follow-up on a KVK number you already have.
+For a Dutch VAT number given with a company name but no address, the address is completed from
+the Dutch business register before the cross-check runs. That is a second external register, and
+it draws one unit from the register-lookup allowance. The response tells you when it happened.
 
-The register's terms prohibit bulk extraction. The allowances are how this product stays inside
-that boundary.
+Supply an address yourself, or pass `use_kvk: false`, and the lookup does not happen. For a
+non-Dutch VAT number it never happens at all.
+
+Until 2026-08 that lookup was not counted anywhere. It is now, because the Kamer van Koophandel
+prohibits bulk extraction from the register in its terms, and an uncounted path cannot be kept
+inside that boundary.
 
 ## When an allowance runs out
 
-The tool that ran out declines with an explanation, and the other one keeps working. Nothing
-else changes, and your connection stays intact.
+Running out of **verifications** means the tool declines until the start of the next calendar
+month.
+
+Running out of **register lookups** does not block a verification. Only the automatic address
+completion is skipped, and the response says so. You can still verify by supplying the address
+yourself.
 
 ## How the counting works
 

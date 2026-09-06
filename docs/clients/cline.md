@@ -9,7 +9,7 @@ Note the field name: Cline expects `streamableHttp`, in camelCase, not `http` or
 1. Open Cline's MCP settings JSON and add:
 
    ```json
-   { "mcpServers": { "kvk": { "type": "streamableHttp", "url": "https://mcp-vat.iwebdevelopment.com" } } }
+   { "mcpServers": { "vat": { "type": "streamableHttp", "url": "https://mcp-vat.iwebdevelopment.com" } } }
    ```
 
 2. Cline opens your browser for OAuth authorization on first use.

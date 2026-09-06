@@ -7,7 +7,7 @@ Cursor connects to remote MCP servers by URL. Add AI VAT Number Validation throu
 1. Go to **Settings → Tools & MCP → New MCP Server**, or edit `.cursor/mcp.json`:
 
    ```json
-   { "mcpServers": { "kvk": { "url": "https://mcp-vat.iwebdevelopment.com" } } }
+   { "mcpServers": { "vat": { "url": "https://mcp-vat.iwebdevelopment.com" } } }
    ```
 
 2. On first connect, Cursor opens your browser for OAuth authorization.

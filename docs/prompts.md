@@ -1,36 +1,31 @@
-# Voorbeeldprompts
+# Example prompts
 
-Voorbeeldvragen die je direct aan je AI-assistent kunt stellen zodra KVK Handelsregister AI
-Connect is gekoppeld. Vervang de namen en nummers door je eigen situatie.
+Questions you can put to your AI assistant once AI VAT Number Validation is connected. Replace
+the numbers and names with your own.
 
-Beide tools lezen alleen. Er wordt nooit iets aangemaakt of gewijzigd.
+The tool is read-only. Nothing is ever created or changed.
 
-## Opzoeken
+## Checking a number
 
-- Zoek Joanknecht in het Handelsregister.
-- Wat is het KVK-nummer van iWebDevelopment?
-- Welke bedrijven met "bakkerij" in de naam staan er in Utrecht?
-- Staat er een bedrijf ingeschreven op Dorpsstraat 1 in Amersfoort?
+- Is VAT number DE123456789 valid?
+- Verify NL810433941B01 and check that it belongs to iWebDevelopment in Amersfoort.
+- We are about to invoice without VAT to a French company. Verify their number first.
+- Check the VAT number on this invoice: Voorbeeld BV, Dorpsstraat 1, Utrecht, NL999999999B01.
 
-## Details opvragen
+## Getting evidence
 
-- Haal het volledige profiel op bij KVK-nummer 12345678.
-- Wat is de rechtsvorm van dit bedrijf?
-- Sinds wanneer staat dit bedrijf ingeschreven?
-- Welke handelsnamen voert deze onderneming?
+- Give me the consultation number for that check.
+- Verify this number and give me something I can keep with the invoice.
+- What exactly does the consultation number prove?
 
-## Een relatie controleren
+## Understanding an answer
 
-- Controleer deze nieuwe leverancier tegen het Handelsregister: Voorbeeld BV, Amsterdam.
-- Klopt dit adres met wat er in het Handelsregister staat?
-- Deze factuur komt van "Voorbeeld Groep". Vind het bijbehorende KVK-nummer.
+- Which fields did the member state actually check?
+- It says the address was not processed. What does that mean here?
+- Was the number invalid, or could the service not be reached?
 
-Let op: een bedrijf dat je niet vindt is niet verdacht. Het Handelsregister bevat alleen in
-Nederland ingeschreven organisaties, dus een buitenlandse leverancier staat er niet in. En dit is
-een vergelijking met het register, geen kredietwaardigheidsoordeel.
+## Before you conclude anything
 
-## Zuiniger omgaan met je tegoed
-
-Een zoekopdracht en een profiel tellen apart, en profielen hebben een lager tegoed omdat het
-register daarvoor kosten rekent. Zoek dus eerst en vraag het profiel alleen op als je de details
-echt nodig hebt.
+A field that was not processed was not checked, and several member states never return those
+fields at all. That is not a discrepancy. An unavailable service is likewise not an invalid
+number. Ask your assistant which of the three you are looking at before you act on it.

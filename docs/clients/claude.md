@@ -8,7 +8,7 @@ Use the custom-connector UI described below, not the local desktop config file.
 
 1. Go to **Settings → Connectors → Add custom connector**.
 2. Paste the base URL: `https://mcp-vat.iwebdevelopment.com`
-3. Sign up in the browser: your email address and the KVK number of your own organization. You get a sign-in link by email.
+3. Sign up in the browser: your email address and the VAT number of your own organization. You get a sign-in link by email.
 
 That is it, no tokens, no manual JSON.
 
