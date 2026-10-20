@@ -38,9 +38,10 @@ number, and that is the whole account.
 
 ## Monthly allowances
 
-Every organization gets 100 verifications and 50 register lookups per calendar month. When an
-allowance runs out, the affected step declines with an explanation. Running out of register
-lookups does not block a verification; it only means the address is not completed for you.
+Every organization gets a monthly allowance, reset at the start of each calendar month, and your
+remaining allowance comes back with every answer. When an allowance runs out, the affected step
+declines with an explanation. Running out of register lookups does not block a verification; it
+only means the address is not completed for you.
 
 ## Certification
 

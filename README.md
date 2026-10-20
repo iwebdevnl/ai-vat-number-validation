@@ -11,10 +11,8 @@ card, no tokens to paste into a config.
 
 [![Add to Cursor](https://img.shields.io/badge/Add_to-Cursor-000?logo=cursor)](https://cursor.com/install-mcp?name=vat&config=eyJ1cmwiOiJodHRwczovL21jcC12YXQuaXdlYmRldmVsb3BtZW50LmNvbSJ9) [![Install in VS Code](https://img.shields.io/badge/Install_in-VS_Code-007ACC?logo=visualstudiocode)](https://insiders.vscode.dev/redirect/mcp/install?name=vat&config=%7B%22name%22%3A%22vat%22%2C%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp-vat.iwebdevelopment.com%22%7D)
 
-Works with Claude on all plans (including the free plan); also with ChatGPT (Developer Mode, paid
-plans), Perplexity (Pro/Max/Enterprise), GitHub Copilot in VS Code, Cursor and other developer
-tools. Availability and setup differ per client. See the
-[client compatibility matrix](#client-compatibility) below.
+Works with Claude, ChatGPT, Perplexity, GitHub Copilot in VS Code, Cursor and other MCP-capable
+clients. How you add it differs per client; see the [client list](#client-compatibility) below.
 
 ![AI VAT Number Validation in action](assets/demo.gif)
 
@@ -102,44 +100,36 @@ answers, and only the second is a finding.
 registered and, where the member state cooperates, that the name and address match. It is not a
 credit check and not a fraud determination.
 
-## Monthly allowances
+## Monthly allowance
 
-Per organization, per calendar month:
+Free, with a monthly allowance per organization that resets at the start of each calendar month.
+Your remaining allowance comes back with every answer, so ask your assistant if you want to know
+where you stand.
 
-| Allowance | Free | With the add-on |
-|---|---:|---:|
-| VAT verifications | 100 | 1000 |
-| Register lookups | 50 | 1000 |
-
-The second row is not a typo. For a Dutch VAT number given with a company name but no address,
-the address is completed from the Dutch business register before the cross-check runs, and that
-draws one register lookup. Supply an address yourself, or pass `use_kvk: false`, and it does not.
-
-Running out of register lookups does not block a verification; it only means the address is not
-completed for you.
-
-The add-on is part of a paid subscription to one of our accounting integrations; see the last
-section.
+There are two counters, and that is worth knowing. A verification draws from one. For a Dutch VAT
+number given with a company name but no address, the address is completed from the Dutch business
+register before the cross-check runs, and that draws from a second, separate one. Supply an
+address yourself, or pass `use_kvk: false`, and the second counter stays untouched. Running out of
+it never blocks a verification; it only means the address is not completed for you.
 
 ## Client compatibility
 
-**Last verified: 2026-07**
+| Client | How to add |
+|---|---|
+| Claude (web / Desktop) | Settings → Connectors → Add custom connector → base URL |
+| Claude Code | `claude mcp add --transport http vat https://…` |
+| GitHub Copilot (VS Code) | `.vscode/mcp.json` with `"type":"http"` + the server URL |
+| Cursor | Settings → Tools & MCP → New MCP Server (`url`), or the Add-to-Cursor badge |
+| Cline | mcp.json `"type":"streamableHttp"` (camelCase) |
+| Windsurf | Settings → Tools → Add Server (`serverUrl`) |
+| Zed | Settings → AI → MCP Servers (URL + Authorization header) |
+| ChatGPT | Settings → Connectors → Advanced → Developer mode → add the URL |
+| Perplexity | Add a custom remote connector by URL |
+| Microsoft 365 Copilot | No "paste a URL" for end users; the agent path via Copilot Studio |
 
-| Client | Remote MCP? | Plan / mode | How to add |
-|---|---|---|---|
-| Claude (web / Desktop) | Yes | All plans incl. **Free** (Free = 1 custom connector); Team/Ent = owner adds | Settings → Connectors → Add custom connector → base URL |
-| Claude Code | Yes | Claude Code itself needs Pro/Max or API billing | `claude mcp add --transport http vat https://…` |
-| GitHub Copilot (VS Code) | Yes | All Copilot plans; Business/Enterprise need an admin "MCP servers" policy (off by default) | `.vscode/mcp.json` with `"type":"http"` + the server URL |
-| Cursor | Yes | No documented plan gate | Settings → Tools & MCP → New MCP Server (`url`), or the Add-to-Cursor badge |
-| Cline | Yes | Free (open-source) | mcp.json `"type":"streamableHttp"` (camelCase) |
-| Windsurf | Yes | Enterprise may gate | Settings → Tools → Add Server (`serverUrl`) |
-| Zed | Yes on recent builds (native HTTP since 2026-03); older builds via `mcp-remote` bridge | No documented gate | Settings → AI → MCP Servers (URL + Authorization header) |
-| ChatGPT | Yes, **Developer Mode only** | **Paid** (Plus/Pro/Business/Enterprise/Edu), not Free | Settings → Connectors → Advanced → Developer mode → add the URL |
-| Perplexity | Yes (since 2026-03) | **Paid** (Pro/Max/Enterprise), not Free, not in Comet | Add a custom remote connector by URL |
-| Microsoft 365 Copilot | **No end-user "paste a URL"** | Agent path only (Copilot Studio) | Build/publish an agent (a heavier path) |
-
-The plan requirements in this table are the client's own, not ours. This connection is free on
-every one of them.
+This connection is free on all of them. A few clients gate remote connectors behind their own
+paid plan or an admin policy, ChatGPT and Perplexity among them; the
+[per-client pages](https://iwebdevnl.github.io/ai-vat-number-validation/) say which.
 
 ## Verify the connection
 
@@ -158,17 +148,9 @@ Once connected, try:
 
 See [TRUST.md](TRUST.md), [PRIVACY.md](PRIVACY.md), and [SECURITY.md](SECURITY.md) for details.
 
-## Using an accounting package?
+## Looking up Dutch companies?
 
-These same tools are also available inside our AI connections for Exact Online, Twinfield and AFAS,
-so you can verify a VAT number without leaving your administration. That is also where the larger
-monthly allowances come from.
-
-- [Exact Online AI Connect](https://github.com/iwebdevnl/exact-online-ai-connect)
-- [Twinfield AI Connect](https://github.com/iwebdevnl/twinfield-ai-connect)
-- [AFAS AI Connect](https://github.com/iwebdevnl/afas-ai-connect)
-
-Looking up Dutch companies in the business register is a separate connection:
+That is a separate connection, free and standalone like this one:
 [KVK Handelsregister AI Connect](https://github.com/iwebdevnl/kvk-handelsregister-ai-connect).
 
 ## License

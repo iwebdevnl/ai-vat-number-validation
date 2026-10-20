@@ -6,8 +6,8 @@ Go to Settings → Connectors → Add custom connector, paste the base URL
 [Claude client page](clients/claude.md) for details.
 
 **What does it cost?**
-Nothing. There is no plan, no trial that expires, and no credit card. Every organization gets 100
-verifications per month; see [Monthly allowances](limits.md).
+Nothing. There is no plan, no trial that expires, and no credit card. There is a monthly
+allowance per organization; see [Monthly allowance](limits.md).
 
 **Why do you need my own VAT number?**
 VIES issues a consultation number to a *requester*. Without a requester VAT number there is

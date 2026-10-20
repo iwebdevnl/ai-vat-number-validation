@@ -27,10 +27,10 @@ elements, and treating that as a discrepancy would flag perfectly ordinary suppl
 - **Connect:** pick your assistant in the Clients section for per-client steps. The
   [README on GitHub](https://github.com/iwebdevnl/ai-vat-number-validation) has the compatibility
   matrix at a glance.
-- **What it costs you:** nothing. See [Monthly allowances](limits.md) for how much you can verify
-  per month.
+- **What it costs you:** nothing. See [Monthly allowance](limits.md) for how the monthly counters
+  work.
 - **Trust and privacy:** see
   [TRUST.md](https://github.com/iwebdevnl/ai-vat-number-validation/blob/main/TRUST.md) and
   [PRIVACY.md](https://github.com/iwebdevnl/ai-vat-number-validation/blob/main/PRIVACY.md).
-- **Other integrations:** see [iWebDevelopment](https://www.iwebdevelopment.com/kennisbank) for
-  our AI connections to Exact Online, Twinfield and AFAS.
+- **Looking up Dutch companies?** That is a separate, equally free connection:
+  [KVK Handelsregister AI Connect](https://github.com/iwebdevnl/kvk-handelsregister-ai-connect).
