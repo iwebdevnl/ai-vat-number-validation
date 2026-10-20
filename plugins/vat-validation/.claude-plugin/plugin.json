@@ -6,7 +6,7 @@
   "defaultEnabled": false,
   "description": "Verify EU VAT numbers from your AI assistant, with a consultation number as evidence.",
   "author": { "name": "iWebDevelopment", "url": "https://www.iwebdevelopment.com" },
-  "homepage": "https://www.iwebdevelopment.com/kennisbank",
+  "homepage": "https://www.iwebdevelopment.com/btw-nummer-validator",
   "license": "MIT",
   "keywords": ["vat", "vies", "vat-validation", "mcp", "eu", "tax"]
 }

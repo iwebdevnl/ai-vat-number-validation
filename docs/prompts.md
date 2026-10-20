@@ -1,16 +1,16 @@
 # Example prompts
 
-Questions you can put to your AI assistant once AI VAT Number Validation is connected. Replace
-the numbers and names with your own.
+Questions you can put to your AI assistant once AI VAT Number Validation is connected. Fill in
+your own numbers and names.
 
 The tool is read-only. Nothing is ever created or changed.
 
 ## Checking a number
 
-- Is VAT number DE123456789 valid?
-- Verify NL810433941B01 and check that it belongs to iWebDevelopment in Amersfoort.
+- Is the VAT number on this invoice valid?
+- Verify this supplier's VAT number and check that the name and address match.
 - We are about to invoice without VAT to a French company. Verify their number first.
-- Check the VAT number on this invoice: Voorbeeld BV, Dorpsstraat 1, Utrecht, NL999999999B01.
+- Is this number still valid, or has it been deregistered?
 
 ## Getting evidence
 

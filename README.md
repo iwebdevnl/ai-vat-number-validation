@@ -36,11 +36,11 @@ That last distinction is the one to understand before you use this. See
 
 ## Example prompts
 
-- "Is VAT number DE123456789 valid?"
-- "Verify NL810433941B01 and check that it belongs to iWebDevelopment in Amersfoort."
-- "Check this supplier's VAT number and give me the consultation number for our records."
-- "This invoice says Voorbeeld BV, Dorpsstraat 1, Utrecht, VAT NL999999999B01. Does that match?"
+- "Is the VAT number on this invoice valid?"
+- "Verify this supplier's VAT number and check that the name and address match."
+- "Check this supplier and give me the consultation number for our records."
 - "We are about to invoice without VAT to a French company. Verify their number first."
+- "Is this number still valid, or has it been deregistered?"
 
 ## Connect
 
@@ -135,7 +135,7 @@ paid plan or an admin policy, ChatGPT and Perplexity among them; the
 
 Once connected, try:
 
-- "Is NL810433941B01 a valid VAT number?"
+- "Is this a valid EU VAT number?"
 - "Give me the consultation number for that check."
 
 ## Trust
@@ -161,5 +161,6 @@ in `assets/`. The hosted service itself is proprietary and is not covered by tha
 
 ## Support
 
+Product page: https://www.iwebdevelopment.com/btw-nummer-validator
 Documentation: https://iwebdevnl.github.io/ai-vat-number-validation/
 Knowledge base: https://www.iwebdevelopment.com/kennisbank

@@ -32,5 +32,6 @@ elements, and treating that as a discrepancy would flag perfectly ordinary suppl
 - **Trust and privacy:** see
   [TRUST.md](https://github.com/iwebdevnl/ai-vat-number-validation/blob/main/TRUST.md) and
   [PRIVACY.md](https://github.com/iwebdevnl/ai-vat-number-validation/blob/main/PRIVACY.md).
+- **More about the product?** The [product page](https://www.iwebdevelopment.com/btw-nummer-validator) explains what it does and who it is for.
 - **Looking up Dutch companies?** That is a separate, equally free connection:
   [KVK Handelsregister AI Connect](https://github.com/iwebdevnl/kvk-handelsregister-ai-connect).
