@@ -24,7 +24,11 @@ elements, and treating that as a discrepancy would flag perfectly ordinary suppl
 
 ## Where to go next
 
-- **Connect:** pick your assistant in the Clients section for per-client steps. The
+- **Connect:** the steps are ready per client:
+  [Claude](clients/claude.md), [ChatGPT](clients/chatgpt.md), [Cursor](clients/cursor.md),
+  [VS Code](clients/vscode.md), [Cline](clients/cline.md), [Windsurf](clients/windsurf.md),
+  [Zed](clients/zed.md), [Perplexity](clients/perplexity.md) and
+  [Copilot Studio](clients/copilot-studio.md). The
   [README on GitHub](https://github.com/iwebdevnl/ai-vat-number-validation) has the compatibility
   matrix at a glance.
 - **What it costs you:** nothing. See [Monthly allowance](limits.md) for how the monthly counters

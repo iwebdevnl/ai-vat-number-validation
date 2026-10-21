@@ -80,8 +80,8 @@ Prefer to add it manually? `claude mcp add --transport http vat https://mcp-vat.
 
 This is a standard remote MCP server, so most MCP-capable clients (ChatGPT, Perplexity, GitHub
 Copilot, Cursor, Cline, Windsurf, Zed, and others) can add it by URL. Setup steps vary per
-client, see the matrix below and the per-client pages in
-[the documentation](https://iwebdevnl.github.io/ai-vat-number-validation/).
+client, see the matrix below and the
+[per-client steps](docs/clients/) in this repository.
 
 ## Reading the result
 
@@ -129,7 +129,7 @@ it never blocks a verification; it only means the address is not completed for y
 
 This connection is free on all of them. A few clients gate remote connectors behind their own
 paid plan or an admin policy, ChatGPT and Perplexity among them; the
-[per-client pages](https://iwebdevnl.github.io/ai-vat-number-validation/) say which.
+[per-client steps](docs/clients/) say which.
 
 ## Verify the connection
 
@@ -162,5 +162,5 @@ in `assets/`. The hosted service itself is proprietary and is not covered by tha
 ## Support
 
 Product page: https://www.iwebdevelopment.com/btw-nummer-validator
-Documentation: https://iwebdevnl.github.io/ai-vat-number-validation/
+Documentation: https://github.com/iwebdevnl/ai-vat-number-validation/tree/main/docs
 Knowledge base: https://www.iwebdevelopment.com/kennisbank
